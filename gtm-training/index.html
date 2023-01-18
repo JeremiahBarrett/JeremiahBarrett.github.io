@@ -10,7 +10,16 @@
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script type="text/javascript" async="" src="./resources/analytics.js.download"></script><script async="" src="./resources/js"></script>
     <script>
-    //GTM SCRIPT HERE
+	// Get the value of GTMID from the URL query string
+	var gtmID = new URLSearchParams(window.location.search).get('GTMID');
+	var gtmstart = "GTM-";
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer',gtmstart.concat(gtmID));</script>
+<!-- End Google Tag Manager -->
     </script>
   <script id="_carbonads_projs" type="text/javascript" src="./resources/CKYIE23N.json"></script><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
   <body data-new-gr-c-s-check-loaded="14.1089.0" data-gr-ext-installed="">
